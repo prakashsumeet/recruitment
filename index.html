@@ -139,5 +139,27 @@
             contactForm.reset();
         });
     </script>
+    <script>
+        function checkScreenSize() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth <= 768) { // Adjust this breakpoint as needed
+                // Apply responsive changes for small screens
+                // For example, hide some elements or change their styles
+                // Example: document.querySelector('.element-to-hide').style.display = 'none';
+            } else {
+                // Apply responsive changes for larger screens
+                // Example: document.querySelector('.element-to-show').style.display = 'block';
+            }
+        }
+
+        // Add an event listener for window resize
+        window.addEventListener('resize', checkScreenSize);
+
+        // Call the function initially to handle the initial screen size
+        checkScreenSize();
+    </script>
+</body>
+</html>
+
 </body>
 </html>
